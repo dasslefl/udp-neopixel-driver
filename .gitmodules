@@ -1,0 +1,3 @@
+[submodule "lib/rp2040-rmii"]
+	path = lib/rp2040-rmii
+	url = git@github.com:dasslefl/rp2040-rmii.git
