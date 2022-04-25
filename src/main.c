@@ -12,7 +12,6 @@
 #include "lwip/dhcp.h"
 #include "lwip/init.h"
 #include "lwip/udp.h"
-#include "lwip/apps/httpd.h"
 
 static struct udp_pcb *udpecho_raw_pcb;
 
@@ -43,8 +42,6 @@ int main() {
 
     // Start DHCP client
     dhcp_start(&netif);
-    
-    httpd_init();
 
     udp2pixel_init(7000);
     
